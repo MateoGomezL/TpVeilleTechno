@@ -1,0 +1,53 @@
+/* 
+Barre de recherche et éléments de l'entête
+*/
+
+//utilisation de extend sur le texte de l'entête
+#texteEntete{
+    @extend.small-uppercase;
+    font-size: 1.5em;
+}
+
+//style pour l'icone de la loupe de recherche
+#btnRecherche{
+    display: block;
+    font-size: 2em;
+    color: white;
+    user-select: none;
+    margin-right: 3%;
+}
+//style pour l'icone du X
+#btnFermer{
+    display: none;
+    font-size: 2em;
+    color: red;
+    user-select: none;
+    margin-right: 3%;
+}
+//La barre n'est pas visible par defaut
+#barreRecherche{
+    display: none;
+}
+//Le checkbox n'est pas visible
+#checkboxRecherche{
+    display: none;
+}
+//Lorsque le checkbox est coché, la barre apparait avec tous ses styles
+#checkboxRecherche:checked ~ #barreRecherche {
+    display: block;
+    position: absolute;
+    left: 2%;
+    width: 90%;
+    padding-left: 10px;
+    background-color: rgb(122, 35, 35);
+    color: white;
+    height: 37px;
+    border: none;
+}
+//lorsque la case est cochée, l'îcone de la loupe disparait pour laisser place au X
+#checkboxRecherche:checked ~ #btnRecherche {
+    display: none;
+}
+#checkboxRecherche:checked ~ #btnFermer {
+    display: block;
+}
