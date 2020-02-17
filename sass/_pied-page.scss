@@ -8,7 +8,7 @@ desktop : 4 colonnes
 #pied-page{
     padding-top : 30px;
     padding-bottom: 30px;
-    color : lighten($couleur_blanc,10%);
+    color : darken($couleur_blanc,40%);
     section{
         display : flex;
         flex-direction: column;
@@ -16,14 +16,27 @@ desktop : 4 colonnes
         justify-content: space-around;
     }
     ul {
-        @include label("pied de page", #381717, white); // utilisation de mixin pour le pied de page
+        width : 50%;
         padding : 10px;
         list-style-type: none;
         margin:0;
         padding: 10px 0 10px 0;
         flex :1;
         text-align : center;
-        //border: 3px dotted lighten($couleur_rouge, 17%);
+        border: 3px dotted lighten($couleur_rouge, 17%);
+        &:nth-of-type(1){
+            @include label("Un", #0ff, white);
+            }
+        &:nth-of-type(2) {
+            @include label("Deux", rgb(41, 80, 80), white);
+            }
+        &:nth-of-type(3) {
+            @include label("Trois", rgb(46, 18, 6), white);
+            }
+        &:nth-of-type(4) {
+            @include label("Quatre", rgb(65, 107, 40), white);
+            }
+
         li {
            padding : 3px;
         }

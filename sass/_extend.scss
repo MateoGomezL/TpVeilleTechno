@@ -3,40 +3,40 @@
 /* ------------------------------------------------------------------------------ */
 /* Un  @extend permet d'hériter des propriétés CSS d'un autre sélecteur           */
 /* ------------------------------------------------------------------------------ */
-
-.small-uppercase{
-  color: lightslategrey;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-
-.modal-background{
-  @extend .small-uppercase;
-}
-
-.product-link{
-  @extend .small-uppercase;
-}
-
-.image-pattern{
-  @extend .small-uppercase;
-}
-
-// le code css qui sera généré
 /*
-.small-uppercase,
-.modal-background,
-.product-link,
-.image-pattern{
-  color: lightslategrey;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-*/
+.small-uppercase{
+    color: lightslategrey;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  
+  .modal-background{
+    @extend .small-uppercase;
+  }
+  
+  .product-link{
+    @extend .small-uppercase;
+  }
+  
+  .image-pattern{
+    @extend .small-uppercase;
+  }
+  */
+  // le code css qui sera généré
+  /*
+  .small-uppercase,
+  .modal-background,
+  .product-link,
+  .image-pattern{
+    color: lightslategrey;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  */
 /* ---------------------------------------------------------------------------- */
 /* Différence avec les mixins                                                   */
 /* ---------------------------------------------------------------------------- */
@@ -56,33 +56,33 @@ en précédent notre extension avec «%»
 */
 
 %small-uppercase{
-  color: lightslategrey;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 12px;
-  text-transform: uppercase;
-}
-
-.modal-background{
-  @extend %small-uppercase;
-}
-
-.product-link{
-  @extend %small-uppercase;
-}
-
-.image-pattern{
-  @extend %small-uppercase;
-}
-
-// le  css généré
-.modal-background,
-.product-link,
-.image-pattern{
-  color: lightslategrey;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  line-height: 12px;
-  text-transform: uppercase;
-}
+    color: lightslategrey;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  
+  .modal-background{
+    @extend %small-uppercase;
+  }
+  
+  .product-link{
+    @extend %small-uppercase;
+  }
+  
+  .image-pattern{
+    @extend %small-uppercase;
+  }
+  
+  // le  css généré
+  .modal-background,
+  .product-link,
+  .image-pattern{
+    color: lightslategrey;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
 
