@@ -6,6 +6,22 @@
         transform : translateX(0px);
     }
 }
+@keyframes animHoverImage{
+    from {
+        opacity: 0%;
+    }
+    to{
+        opacity: 70%;
+    }
+}
+@keyframes animHoverOutImage{
+    from {
+        opacity: 70%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
 
 .animEntete {
     animation : animEntete 1s; 

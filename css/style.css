@@ -761,24 +761,62 @@ l'état checked est testé par un le sélecteur suivant:
   width: 70vw;
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
 }
 
 .Tableau-grid * {
   height: 100%;
 }
 
-.Tableau-grid img {
+.Tableau-grid .ConteneurImg {
   position: relative;
 }
 
+.Tableau-grid p {
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  color: white;
+  font-size: 2em;
+}
+
 .Tableau-grid .carreNoir {
-  position: relative;
+  position: absolute;
   background-color: black;
   width: 100%;
+  opacity: 0%;
+}
+
+.Tableau-grid .carreNoir:hover {
+  -webkit-animation: animHoverImage 0.1s ease-in forwards;
+          animation: animHoverImage 0.1s ease-in forwards;
+}
+
+.Tableau-grid .carreNoir:not(:hover) {
+  -webkit-animation: animHoverOutImage 0.1s ease-out forwards;
+          animation: animHoverOutImage 0.1s ease-out forwards;
+}
+
+@media screen and (min-width: 600px) {
+  .Tableau-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Tableau-grid {
+    width: 90vw;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1231,6 +1269,42 @@ img {
   to {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes animHoverImage {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 70%;
+  }
+}
+
+@keyframes animHoverImage {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 70%;
+  }
+}
+
+@-webkit-keyframes animHoverOutImage {
+  from {
+    opacity: 70%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes animHoverOutImage {
+  from {
+    opacity: 70%;
+  }
+  to {
+    opacity: 0%;
   }
 }
 

@@ -1,18 +1,50 @@
 .Tableau-grid{
     width: 70vw;
     display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
 
     *{
         height: 100%;
     }
-    img{
+    .ConteneurImg{
         position: relative;    
     }
+    p{
+        position: absolute;
+        top: 30%;
+        left: 17%;
+        color: white;
+        font-size: 2em;
+    }
     .carreNoir{
-        position: relative;
+        position: absolute;
         background-color: black;
         width: 100%;
+        opacity: 0%;
+
+        &:hover{
+            
+            animation: animHoverImage 0.1s ease-in forwards;
+            //opacity: 70%;
+        }
+        &:not(:hover){
+            
+            animation: animHoverOutImage 0.1s ease-out forwards;
+        }
+    }
+}
+@media screen and (min-width: 600px){
+    .Tableau-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }        
+}
+
+@media screen and (min-width: 1000px){
+    .Tableau-grid{
+        width: 90vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
