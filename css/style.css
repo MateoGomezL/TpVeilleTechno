@@ -14,6 +14,7 @@ License: GNU General Public License v2 or later
 # Element
 # Typographie
 # Menu
+# Grid
 # Pied-page
 # Bouton
 # Slider
@@ -753,6 +754,33 @@ l'état checked est testé par un le sélecteur suivant:
   }
 }
 
+/* ------------------------------------------------------------
+# Grid
+-------------------------------------------------------------- */
+.Tableau-grid {
+  width: 70vw;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.Tableau-grid * {
+  height: 100%;
+}
+
+.Tableau-grid img {
+  position: relative;
+}
+
+.Tableau-grid .carreNoir {
+  position: relative;
+  background-color: black;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Pied-page 
 ---------------------------------------------------------------- */
@@ -1143,9 +1171,6 @@ scroll-snap-type: mandatory;
 img {
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }

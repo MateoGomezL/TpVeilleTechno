@@ -14,6 +14,7 @@ License: GNU General Public License v2 or later
 # Element
 # Typographie
 # Menu
+# Grid
 # Pied-page
 # Bouton
 # Slider
@@ -47,6 +48,10 @@ License: GNU General Public License v2 or later
 # Menu
 -------------------------------------------------------------- */
 @import "_navigation.scss";
+/* ------------------------------------------------------------
+# Grid
+-------------------------------------------------------------- */
+@import "_grid.scss";
 /*--------------------------------------------------------------
 # Pied-page 
 ---------------------------------------------------------------- */
