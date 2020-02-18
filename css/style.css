@@ -779,7 +779,7 @@ l'état checked est testé par un le sélecteur suivant:
   height: auto;
   position: absolute;
   top: 20%;
-  left: 17%;
+  left: 15%;
   color: white;
   font-size: 2em;
   padding-bottom: 2%;
@@ -789,7 +789,7 @@ l'état checked est testé par un le sélecteur suivant:
 .Tableau-grid p:nth-child(2) {
   position: absolute;
   top: 55%;
-  left: 17%;
+  left: 15%;
   color: white;
   font-size: 1em;
 }
@@ -823,6 +823,12 @@ l'état checked est testé par un le sélecteur suivant:
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
   }
+  .Tableau-grid p:nth-child(1) {
+    font-size: 1em;
+  }
+  .Tableau-grid p:nth-child(2) {
+    font-size: 0.5em;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -839,7 +845,7 @@ l'état checked est testé par un le sélecteur suivant:
     font-size: 3em;
   }
   .Tableau-grid p:nth-child(2) {
-    top: 55%;
+    top: 65%;
     left: 17%;
     font-size: 1em;
   }
