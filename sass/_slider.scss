@@ -45,7 +45,7 @@ scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar-thumb {
-    background: rgb(129, 57, 57);
+    background-color: $couleur_bleuHeader;
     border-radius: 10px;
 }
 
@@ -72,9 +72,9 @@ scroll-snap-type: mandatory;
     font-size: 100px;
 }
 
-.slides>div:target {
-    /* transform: scale(0.8); */
-}
+/*.slides>div:target {
+    // transform: scale(0.8); 
+}*/
 
 .author-info {
     background: rgba(0, 0, 0, 0.75);

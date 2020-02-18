@@ -12,6 +12,7 @@ License: GNU General Public License v2 or later
 # mixin
 # Layout
 # Element
+# Typographie
 # Menu
 # Pied-page
 # Bouton
@@ -314,7 +315,7 @@ On définit ici des règles de styles générales qui peuvent être enrichies ai
 Ces règles servent de bases  
 */
 header {
-  color: #b19090;
+  color: #909cb1;
 }
 
 header h1 {
@@ -341,12 +342,18 @@ header h2 {
 }
 
 /* ------------------------------------------------------------
+# Typographie 
+-------------------------------------------------------------- */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------------------------------------
 # Layout
 -------------------------------------------------------------- */
 body {
   width: 100vw;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,13 +377,17 @@ footer {
           justify-content: center;
 }
 
+/*header {
+    //z-index: 999;
+   // flex:1;
+}*/
 header,
 footer {
-  background-color: #ba5252;
+  background-color: #5287ba;
 }
 
 nav {
-  background-color: #652828;
+  background-color: #284765;
 }
 
 main {
@@ -398,7 +409,7 @@ main {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   background-color: white;
-  color: #494545;
+  color: #282f39;
 }
 
 main section {
@@ -477,7 +488,7 @@ main section p {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   min-height: 100%;
-  background-color: #471c1c;
+  background-color: #1c3247;
   border: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 200px;
@@ -555,7 +566,7 @@ l'état checked est testé par un le sélecteur suivant:
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-color: #522121;
+  background-color: #213a52;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -580,7 +591,7 @@ l'état checked est testé par un le sélecteur suivant:
   height: auto;
   -webkit-transition: max-height 1s;
   transition: max-height 1s;
-  background-color: #522121;
+  background-color: #213a52;
 }
 
 #menu ul li {
@@ -603,11 +614,11 @@ l'état checked est testé par un le sélecteur suivant:
   text-decoration: none;
   display: block;
   padding: 6px 3px 3px 30px;
-  color: #979090;
+  color: #687a92;
 }
 
 #menu ul li a:hover {
-  background-color: #ba5252;
+  background-color: #5287ba;
   color: #fff;
 }
 
@@ -640,7 +651,7 @@ l'état checked est testé par un le sélecteur suivant:
     width: 80%;
     margin-left: 5%;
     margin-right: 0%;
-    padding-left: 10pxpx;
+    padding-left: 10px;
     display: none;
     -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
@@ -738,7 +749,7 @@ l'état checked est testé par un le sélecteur suivant:
     z-index: 1;
   }
   #menu ul li a:hover {
-    background-color: #9c3d3d;
+    color: white;
   }
 }
 
@@ -753,7 +764,7 @@ desktop : 4 colonnes
 #pied-page {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #2f2c2c;
+  color: #13161b;
 }
 
 #pied-page section {
@@ -781,7 +792,7 @@ desktop : 4 colonnes
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  border: 3px dotted #b54848;
+  border: 3px dotted #4880b5;
 }
 
 #pied-page ul:nth-of-type(1) {
@@ -970,17 +981,17 @@ desktop : 4 colonnes
 }
 
 .btn-rouge {
-  background: #772f2f;
+  background: #6d292c;
 }
 
 .btn-rouge:hover {
-  background: #5a2323;
+  background: #4f1e20;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .btn-rouge:active {
-  background: #1c0b0b;
+  background: #100607;
 }
 
 .bouton {
@@ -1072,7 +1083,7 @@ scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar-thumb {
-  background: #813939;
+  background-color: #2f5477;
   border-radius: 10px;
 }
 
@@ -1110,10 +1121,9 @@ scroll-snap-type: mandatory;
   font-size: 100px;
 }
 
-.slides > div:target {
-  /* transform: scale(0.8); */
-}
-
+/*.slides>div:target {
+    // transform: scale(0.8); 
+}*/
 .author-info {
   background: rgba(0, 0, 0, 0.75);
   color: white;
