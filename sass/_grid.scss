@@ -10,12 +10,22 @@
     .ConteneurImg{
         position: relative;    
     }
-    p{
+    p:nth-child(1){
+        height: auto;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 17%;
         color: white;
         font-size: 2em;
+        padding-bottom: 2%;
+        border-bottom: 2px solid white;
+    }
+    p:nth-child(2){
+        position: absolute;
+        top: 55%;
+        left: 17%;
+        color: white;
+        font-size: 1em;
     }
     .carreNoir{
         position: absolute;
@@ -26,6 +36,9 @@
         &:hover{
             
             animation: animHoverImage 0.1s ease-in forwards;
+            p{
+                animation: animHoverTexte 0.3s ease-in forwards;
+            }
             //opacity: 70%;
         }
         &:not(:hover){
@@ -46,5 +59,16 @@
         width: 90vw;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+
+        p:nth-child(1){
+            top: 30%;
+            left: 17%;
+            font-size: 3em;
+        }
+        p:nth-child(2){
+            top: 55%;
+            left: 17%;
+            font-size: 1em;
+        }
     }
 }

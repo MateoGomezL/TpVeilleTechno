@@ -775,12 +775,23 @@ l'état checked est testé par un le sélecteur suivant:
   position: relative;
 }
 
-.Tableau-grid p {
+.Tableau-grid p:nth-child(1) {
+  height: auto;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 17%;
   color: white;
   font-size: 2em;
+  padding-bottom: 2%;
+  border-bottom: 2px solid white;
+}
+
+.Tableau-grid p:nth-child(2) {
+  position: absolute;
+  top: 55%;
+  left: 17%;
+  color: white;
+  font-size: 1em;
 }
 
 .Tableau-grid .carreNoir {
@@ -793,6 +804,11 @@ l'état checked est testé par un le sélecteur suivant:
 .Tableau-grid .carreNoir:hover {
   -webkit-animation: animHoverImage 0.1s ease-in forwards;
           animation: animHoverImage 0.1s ease-in forwards;
+}
+
+.Tableau-grid .carreNoir:hover p {
+  -webkit-animation: animHoverTexte 0.3s ease-in forwards;
+          animation: animHoverTexte 0.3s ease-in forwards;
 }
 
 .Tableau-grid .carreNoir:not(:hover) {
@@ -816,6 +832,16 @@ l'état checked est testé par un le sélecteur suivant:
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+  }
+  .Tableau-grid p:nth-child(1) {
+    top: 30%;
+    left: 17%;
+    font-size: 3em;
+  }
+  .Tableau-grid p:nth-child(2) {
+    top: 55%;
+    left: 17%;
+    font-size: 1em;
   }
 }
 
@@ -1287,6 +1313,28 @@ img {
   }
   to {
     opacity: 70%;
+  }
+}
+
+@-webkit-keyframes animHoverTexte {
+  from {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  to {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes animHoverTexte {
+  from {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  to {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
   }
 }
 
