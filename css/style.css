@@ -316,7 +316,7 @@ On définit ici des règles de styles générales qui peuvent être enrichies ai
 Ces règles servent de bases  
 */
 header {
-  color: #909cb1;
+  color: #1f2f4d;
 }
 
 header h1 {
@@ -384,11 +384,11 @@ footer {
 }*/
 header,
 footer {
-  background-color: #5287ba;
+  background-color: #b3c8db;
 }
 
 nav {
-  background-color: #284765;
+  background-color: #5c88b3;
 }
 
 main {
@@ -898,7 +898,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(1):before {
-  background: #0ff;
+  background: #0b1163;
   color: white;
   content: "Everest";
   display: inline-block;
@@ -919,7 +919,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(2):before {
-  background: #295050;
+  background: #0b1163;
   color: white;
   content: "Kilimandjaro";
   display: inline-block;
@@ -940,7 +940,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(3):before {
-  background: #2e1206;
+  background: #0b1163;
   color: white;
   content: "Mont Fuji";
   display: inline-block;
@@ -961,7 +961,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(4):before {
-  background: #416b28;
+  background: #0b1163;
   color: white;
   content: "Denali";
   display: inline-block;

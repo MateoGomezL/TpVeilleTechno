@@ -23,11 +23,11 @@ footer {
 header,
 footer {
     // chaque section pricipale une couleur en bg sur 100vw
-    background-color: lighten($couleur_bleuHeader, 20%);
+    background-color: lighten($couleur_bleuClairHeader, 20%);
 }
 
 nav {
-    background-color: darken($couleur_bleuHeader, 5%);
+    background-color: darken($couleur_bleuClairHeader, 5%);
 }
 
 main {
@@ -38,7 +38,7 @@ main {
     align-items: center; // pour que la section .global soit centrée
     justify-content: center;
     flex : 1 1 auto; // pour pousser le footer en bas du viewport
-    background-color: lighten($couleur_bleuHeader, 70%);
+    background-color: lighten($couleur_bleuClairHeader, 70%);
     color :  darken($couleur_blanc, 30%);
     
     section {

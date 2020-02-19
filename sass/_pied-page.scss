@@ -25,16 +25,16 @@ desktop : 4 colonnes
         text-align : center;
         border: 3px dotted lighten($couleur_bleuHeader, 17%);
         &:nth-of-type(1){
-            @include label("Everest", #0ff, white);
+            @include label("Everest", rgb(11, 17, 99), white);
             }
         &:nth-of-type(2) {
-            @include label("Kilimandjaro", rgb(41, 80, 80), white);
+            @include label("Kilimandjaro", rgb(11, 17, 99), white);
             }
         &:nth-of-type(3) {
-            @include label("Mont Fuji", rgb(46, 18, 6), white);
+            @include label("Mont Fuji", rgb(11, 17, 99), white);
             }
         &:nth-of-type(4) {
-            @include label("Denali", rgb(65, 107, 40), white);
+            @include label("Denali", rgb(11, 17, 99), white);
             }
 
         li {
