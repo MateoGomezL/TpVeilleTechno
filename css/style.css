@@ -900,7 +900,7 @@ desktop : 4 colonnes
 #pied-page ul:nth-of-type(1):before {
   background: #0ff;
   color: white;
-  content: "Un";
+  content: "Everest";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -921,7 +921,7 @@ desktop : 4 colonnes
 #pied-page ul:nth-of-type(2):before {
   background: #295050;
   color: white;
-  content: "Deux";
+  content: "Kilimandjaro";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -942,7 +942,7 @@ desktop : 4 colonnes
 #pied-page ul:nth-of-type(3):before {
   background: #2e1206;
   color: white;
-  content: "Trois";
+  content: "Mont Fuji";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -963,7 +963,7 @@ desktop : 4 colonnes
 #pied-page ul:nth-of-type(4):before {
   background: #416b28;
   color: white;
-  content: "Quatre";
+  content: "Denali";
   display: inline-block;
   font-size: 0.6rem;
   font-weight: 700;
@@ -1288,6 +1288,14 @@ img {
     -webkit-transform: translateX(500px);
             transform: translateX(500px);
   }
+  75% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  80% {
+    -webkit-transform: translateX(-50px) skewX(15deg);
+            transform: translateX(-50px) skewX(15deg);
+  }
   to {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -1297,6 +1305,36 @@ img {
   from {
     -webkit-transform: translateX(500px);
             transform: translateX(500px);
+  }
+  75% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  80% {
+    -webkit-transform: translateX(-50px) skewX(15deg);
+            transform: translateX(-50px) skewX(15deg);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes animEntete2 {
+  from {
+    -webkit-transform: translateX(-700px);
+            transform: translateX(-700px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes animEntete2 {
+  from {
+    -webkit-transform: translateX(-700px);
+            transform: translateX(-700px);
   }
   to {
     -webkit-transform: translateX(0px);
@@ -1363,8 +1401,13 @@ img {
 }
 
 .animEntete {
-  -webkit-animation: animEntete 1s;
-          animation: animEntete 1s;
+  -webkit-animation: animEntete 1s ease-in;
+          animation: animEntete 1s ease-in;
+}
+
+.animEntete2 {
+  -webkit-animation: animEntete2 1s ease-in;
+          animation: animEntete2 1s ease-in;
 }
 
 /*-------------------------------------------------------------- */

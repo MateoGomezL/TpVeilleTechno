@@ -11,4 +11,9 @@ anim(){
     elmTitre.classList.add('animEntete')
 }
 
+anim2(){
+  console.log('///////// animation2 //////////')
+  this.elmEntete.classList.add('animEntete2')
+}
+
 }

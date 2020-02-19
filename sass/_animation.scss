@@ -2,6 +2,21 @@
     from {
         transform : translateX(500px);
     }
+    75%{
+        transform: skewX(0deg);
+    }
+    80%{
+        transform: translateX(-50px)
+        skewX(15deg);
+    }
+    to{
+        transform : translateX(0px);
+    }
+}
+@keyframes animEntete2{
+    from {
+        transform : translateX(-700px);
+    }
     to{
         transform : translateX(0px);
     }
@@ -32,5 +47,9 @@
 }
 
 .animEntete {
-    animation : animEntete 1s; 
+    animation : animEntete 1s ease-in; 
+}
+
+.animEntete2{
+    animation : animEntete2 1s ease-in; 
 }
