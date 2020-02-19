@@ -41,7 +41,7 @@
         display : none;
         align-self: stretch;
         min-height : 100%;
-        background-color: darken($couleur_bleuHeader, 13%);
+        background-color: darken($couleur_bleuClairHeader, 13%);
         border : none;
         flex : 1 1 200px;
         opacity : .8;
@@ -117,7 +117,7 @@ l'état checked est testé par un le sélecteur suivant:
     display: flex;
     position: relative;
     //top: 110px;
-    background-color: darken($couleur_bleuHeader, 10%);
+    background-color: darken($couleur_bleuClairHeader, 10%);
     align-items: flex-start;
     height: 40px;
     // order : -10;

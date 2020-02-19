@@ -489,7 +489,7 @@ main section p {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   min-height: 100%;
-  background-color: #1c3247;
+  background-color: #49749d;
   border: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 200px;
@@ -567,7 +567,7 @@ l'état checked est testé par un le sélecteur suivant:
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-color: #213a52;
+  background-color: #4e7ca7;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
