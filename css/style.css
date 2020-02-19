@@ -1325,6 +1325,14 @@ img {
     -webkit-transform: translateX(-700px);
             transform: translateX(-700px);
   }
+  75% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  80% {
+    -webkit-transform: translateX(50px) skewX(-15deg);
+            transform: translateX(50px) skewX(-15deg);
+  }
   to {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -1335,6 +1343,14 @@ img {
   from {
     -webkit-transform: translateX(-700px);
             transform: translateX(-700px);
+  }
+  75% {
+    -webkit-transform: skewX(0deg);
+            transform: skewX(0deg);
+  }
+  80% {
+    -webkit-transform: translateX(50px) skewX(-15deg);
+            transform: translateX(50px) skewX(-15deg);
   }
   to {
     -webkit-transform: translateX(0px);
