@@ -316,7 +316,7 @@ On définit ici des règles de styles générales qui peuvent être enrichies ai
 Ces règles servent de bases  
 */
 header {
-  color: #1f2f4d;
+  color: #334d7c;
 }
 
 header h1 {
@@ -592,7 +592,7 @@ l'état checked est testé par un le sélecteur suivant:
   height: auto;
   -webkit-transition: max-height 1s;
   transition: max-height 1s;
-  background-color: #213a52;
+  background-color: #334d7c;
 }
 
 #menu ul li {
@@ -898,7 +898,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(1):before {
-  background: #0b1163;
+  background: #334d7c;
   color: white;
   content: "Everest";
   display: inline-block;
@@ -919,7 +919,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(2):before {
-  background: #0b1163;
+  background: #334d7c;
   color: white;
   content: "Kilimandjaro";
   display: inline-block;
@@ -940,7 +940,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(3):before {
-  background: #0b1163;
+  background: #334d7c;
   color: white;
   content: "Mont Fuji";
   display: inline-block;
@@ -961,7 +961,7 @@ desktop : 4 colonnes
 }
 
 #pied-page ul:nth-of-type(4):before {
-  background: #0b1163;
+  background: #334d7c;
   color: white;
   content: "Denali";
   display: inline-block;
@@ -1181,7 +1181,7 @@ scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar-thumb {
-  background-color: #2f5477;
+  background-color: #334d7c;
   border-radius: 10px;
 }
 

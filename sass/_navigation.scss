@@ -136,7 +136,7 @@ l'état checked est testé par un le sélecteur suivant:
         max-height: 0px; // on cache le menu mobile
         height: auto; // la hauteur nécessaire pour afficher uniquement les choix de menu 
         transition: max-height 1s; // max-height sera animé
-        background-color: darken($couleur_bleuHeader, 10%); // une couleur bg est donnée à ul
+        background-color: #334d7c; // une couleur bg est donnée à ul
 
         li {
             opacity: 0;
